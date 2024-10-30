@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre = "Libni";
+        let edad = 19;
+        let esEstudiante = true;
+
+        console.log("Nombre: ", nombre, ", edad: ", edad, ", es estudiante: ", esEstudiante);
+
+        nombre = "James";
+        edad = 33;
+        esEstudiante = false;
+        
+        console.log("Nombre: ", nombre, ", edad: ", edad, ", es estudiante: ", esEstudiante);
+
+        //Parte 2
+
+        let a = 1;
+        let b = 2;
+
+        let suma = a + b;
+        let resta = a - b;
+        let div = a / b;
+        let mult = a * b;
+
+        console.log("Suma: ", suma, ", resta: ", resta, ", división: ", div, " y multiplcación: ", mult);
+
+        console.log("A == b: ", a == b, ", a != b: ", a != b, ", a < b: ", a < b, ", a > b: ", a > b, ", a >= b: ", a >= b, ", a <= b: ", a <= b
+        );
+
+        // parte 3
+
+        //Bienvenido al algoritmo que detecta si una persona es o no es apta para conducir
+        //¡Gracias por usar el programa!
+
+        let msjWelcome = "Hola bienvenido ";
+
+        console.log(msjWelcome, nombre)
+
+        let esMayorDeEdad = false;
+        let tieneLicencia = false;
+
+        if(esMayorDeEdad && tieneLicencia)
+        {
+            console.log("No puede conducir dado que no cumple los requisitos minimos...");
+        }
+
+        tieneLicencia = true;
+
+        if(esMayorDeEdad || tieneLicencia)
+        {
+            console.log("Puede conducir porque cumple con uno de los requisitos...");
+        }
+
+        //parte 4
+
+        nombre = prompt("Ingrese su nombre");
+        edad = prompt("Ingrese su edad");
+        esEstudiante = prompt("Es estudiante? S/N" === "s");
+
+        if(edad >= 18)
+        {
+            console.log("El usuario es mayor de edad");
+        }else{
+            console.log("El usuario no es mayor de edad");
+        }
+
+        if(esEstudiante)
+        {
+            console.log("El usuario tiene acceso a descuento por ser estudiante");
+        }
+        else
+        {
+            console.log("El usuario no tiene acceso a descuento por ser estudianteS")
+        }
+
+    </script>
+</body>
+</html>
